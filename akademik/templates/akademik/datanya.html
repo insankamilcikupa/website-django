@@ -1,0 +1,95 @@
+<section class="team_wthree py-4" id="team">
+   <div class="container py-lg-5">
+   	<ul class="nav">
+		<li class="nav-link">
+			<a class= "btn btn-primary" href="/akademik/data/" title="">Data Diri Siswa</a>
+			<a class= "btn btn-primary" href="/akademik/nilai/" title="">Nilai Siswa</a>
+			<a class= "btn btn-primary" href="/akademik/spp/" title="">SPP Siswa</a><br><br>
+            <a href="{% url 'logout' %}">LOGOUT</a>
+		</li>
+	</ul>
+	<br>
+      <div class="sec-main">
+        <span class="sub-line">Selamat Datang, {{user}}</span>
+        <h3 class="wthree-title">Data Diri Siswa</h3>
+      </div>  
+    <div class="container">
+    	<table class="table table-bordered">
+		  <thead>
+		    <tr class="table-warning">
+		      <th scope="col" width="250" class="text-center">Data Diri</th>
+		      <th scope="col" width="400" class="text-center">Keterangan</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td>Username</td>
+		      <td>{{user.siswa.Siswa}}</td>
+		    </tr>
+		    <tr>
+		      <td>NIS</td>
+		      <td>{{user.siswa.NIS}}</td>
+		    </tr>
+		    <tr>
+		      <td>Nama Lengkap</td>
+		      <td>{{user.siswa.Nama_Lengkap}}</td>
+		    </tr>
+		    <tr>
+				<td>Nama Panggilan</td>
+				<td>{{user.siswa.Nama_Panggilan}}</td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>{{user.siswa.Jenis_Kelamin}}</td>
+			</tr>
+			<tr>
+				<td>Tempat, Tanggal Lahir</td>
+				<td>{{user.siswa.Tempat_Lahir}}, &nbsp {{user.siswa.Tanggal_Lahir}}</td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td>{{user.siswa.Alamat}}</td>
+			</tr>
+			<tr>
+				<td>Agama</td>
+				<td>{{user.siswa.Agama}}</td>
+			</tr>
+			<tr>
+				<td>Anak Ke-</td>
+				<td>{{user.siswa.Anak_Ke}}</td>
+			</tr>
+			<tr>
+				<td>Nama Orang Tua</td>
+				<td>{{user.siswa.Nama_Orang_Tua}}</td>
+			</tr>
+			<tr>
+				<td>Alamat Orang Tua</td>
+				<td>{{user.siswa.Alamat_Orang_Tua}}</td>
+			</tr>
+			<tr>
+				<td>Pekerjaan Orang Tua</td>
+				<td>{{user.siswa.Pekerjaan_Orang_Tua}}</td>
+			</tr>
+			<tr>
+				<td>No.Telp Orang Tua</td>
+				<td>{{user.siswa.No_Telp_Orang_Tua}}</td>
+			</tr>
+			<tr>
+				<td>Kelas</td>
+				<td>{{user.siswa.Kelas}}</td>
+			</tr>
+			<tr>
+				<td>Angkatan</td>
+				<td>{{user.siswa.Angkatan}}</td>
+			</tr>
+			<tr>
+				<td>Status</td>
+				<td>{{user.siswa.Status}}</td>
+			</tr>
+		  </tbody>
+		</table>
+    </div>  
+</div>
+</section>
+
+

@@ -1,0 +1,29 @@
+<section class="team_wthree py-4" id="team">
+   <div class="container py-lg-5">
+      <div class="sec-main">
+        <span class="sub-line">Kalender Akademik</span>
+        <h3 class="wthree-title">TK Insan Kamil</h3>
+      </div>    
+
+      <div class="container">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">Kegiatan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for field in kalender %}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{field.Tanggal|date:"D, d M Y"}}</td>
+                <td>{{field.Kegiatan}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+  </div>
+</section>

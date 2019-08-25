@@ -1,0 +1,39 @@
+body {
+	padding-top: 50px;
+	color: #959595;
+}
+
+.kotak{
+	width: 1150px;
+	height: 300px;
+	background: pink;
+	border: solid 3px #efe824;
+}
+
+.kotak2{
+	width: 1150px;
+	height: 300px;
+	background: pink;
+	border: solid 3px #efe824;
+}
+
+.judul{
+	color: black;
+	font-color: black;
+}
+
+.feature {
+	background: salmon linear-gradient(to bottom, salmon, rgb(247, 141, 141));
+	color: black;
+}
+
+.small-print {
+	background-color: white;
+	font-color: black;
+	padding: 30px 0;
+}
+
+.feature,
+.small-print {
+	text-align: center;
+}

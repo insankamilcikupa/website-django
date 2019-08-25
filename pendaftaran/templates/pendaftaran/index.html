@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <title>TK INSAN KAMIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Alphabet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+    {% include "snippets/scripts.html" %}
+
+    {% include "snippets/tema.html" %}
+    
+    {% include "snippets/font.html" %}
+
+</head>
+
+<body>
+
+    {% include "snippets/banner.html" %}
+
+    {% include "snippets/header.html" %}
+
+    <div class="container">
+            <div class="about-head">
+                <div class="sec-main">
+                    <span class="sub-line">PSB</span>
+                    <h3 class="wthree-title">Penerimaan Siswa Baru</h3>
+                </div>
+                <div class="ab-btm">
+                    <h4>Ketentuan Siswa Baru</h4>
+                    <ul class="list-group mt-3 why-list">
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">01</span>Kelompok PAUD (Pendidikan Anak Usia Dini) usia anak minimal 3 tahun</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">02</span>Kelompok A, usia anak minimal 4 tahun</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">03</span>Kelompok B, usia anak minimal 5 tahun</li>
+                    </ul>
+                </div>
+
+                <div class="ab-btm">
+                    <h4>Alur Pendaftaran Siswa Baru</h4>
+                    <ul class="list-group mt-3 why-list">
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">01</span>Formulir dapat diunduh disini  
+                            <a href="{% static "templates/formulir.PDF" %}" download="Formulir Pendaftaran">Formulir Pendaftaran</a></li>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">02</span>Isi formulir setelah mengunduh formulir pendaftaran
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">03</span>Isi formulir dapat dengan menulis dengan bolpoin atau mengetik langsung di formulir tersebut kemudian dicetak</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">03</span>Setelah mengisi formulir, bawa formulir ke sekolah dengan membawa persyaratan lain sebagai berikut:
+                            <li class="list-group-item border-1">
+                                <span class="num mr-2">-</span>Fotocopy Kartu Keluarga<br>
+                                <span class="num mr-2">-</span>Fotocopy Akte Kelahiran Anak<br>
+                                <span class="num mr-2">-</span>Pas Foto Anak 3x4 sebanyak 2 lembark<br>
+                            </li>
+                        </li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">04</span>Biaya pendaftaran sebesar Rp 50.000 (dibayar saat validasi ke sekolah). Khusus untuk anak yatim tidak dikenakan biaya.</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">05</span>Jika ingin mendaftar langsung, bisa datang ke alamat ini <br><br>
+                            <p>TK Insan Kamil Jl. Raya Serang Km 10.5 No. 16 Kadu Bunder, Kecamatan Cikupa, Kabupaten Tangerang. Telepon: 082298711215</p></li>
+                    </ul>
+                </div>
+
+                 <div class="ab-btm">
+                    <h4>Jadwal Pendaftaran</h4>
+                    <ul class="list-group mt-3 why-list">
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">01</span>Pendaftaran dimulai dari bulan April s.d Juli 2019. Sekolah buka di hari Senin s.d. Jumat pukul 08.00 s.d. 13.00</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">02</span>Setelah melakukan pendaftaran dan membayar biaya pendaftaran, maka observasi calon murid dengan guru kelas dan wawancara orang tua dengan Kepala Sekolah
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">03</span>Penyelesaian Administrasi Keuangan selambat-lambatnya 1 bulan setelah pendaftaran diterima</li>
+                        <li class="list-group-item border-0">
+                            <span class="num mr-3">04</span>Masuk sekolah (Pembagian Kelas) akan diberitahukan pada hari pertama masuk sekolah</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    {% include "snippets/footer.html" %}
+
+    {% include "snippets/javascript.html" %}
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static "templates/js/bootstrap.js" %}"></script>
+</body>
+
+</html>

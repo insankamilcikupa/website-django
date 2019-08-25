@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <title>TK INSAN KAMIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Alphabet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    
+    {% include "snippets/scripts.html" %}
+
+    {% include "snippets/tema.html" %}
+    
+    {% include "snippets/font.html" %}
+
+</head>
+
+<body>
+
+    {% include "snippets/banner.html" %}
+
+    {% include "akademik/navbar.html" %}
+
+    <div class="container bg-light shadow mt-5">
+		    <div class="row featurette">
+                <ul class="nav">
+                        <li class="nav-item">
+                                <a class="nav-link" href="/akademik/siswa" title="">
+                                    Semua Siswa
+                                </a>
+                        </li>
+                </ul>
+                <br>
+                <ul class="nav">
+                    {% for kelas in kelas_data %}
+                        <li class="nav">
+                            <a class="btn btn-outline-success" href="/akademik/kelas/{{kelas.Kelas}}" title="">
+                                <h6>Kelas {{kelas.Kelas}}</h6>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+		</div>
+        <div class="container bg-light shadow mt-5">
+            <div class="row featurette">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr class="table-warning">
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Kelas</th>                         
+                            </tr>
+                        </thead>  
+                        <tbody>
+                        {% for siswa in data %}
+                            <tr>
+                                <td class="table-danger">{{forloop.counter}}</td>
+                                <td class="table-danger">{{siswa.Nama_Lengkap}}</td>
+                                <td class="table-danger">{{siswa.Kelas}}</td>				
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+			</div>
+        </div>
+       
+
+    {% include "snippets/footer.html" %}
+
+    {% include "snippets/javascript.html" %}
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static "templates/js/bootstrap.js" %}"></script>
+</body>
+
+</html>

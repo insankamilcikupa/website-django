@@ -1,0 +1,43 @@
+{% load static %}
+<!-- portfolio -->
+    <div class="portfolio-wthree py-lg-5" id="portfolio">
+        <div class="container pt-md-5 pt-4">
+            <div class="sec-main">
+                <span class="sub-line">Lihat</span>
+                <h3 class="wthree-title">Galeri</h3>
+            </div>
+         </div>
+    </div>
+
+    <section class="konten">
+        <div class="container">
+            <div class="row">
+                
+            {% for coba in gambar %}
+                <div class="col-md-4">
+                    <div class="img-grid">
+                        <img src="{{ coba.image.url }}" width="350" height="350"><br>
+                        <div class="caption text-center">
+                            <p>{{coba.keterangan}}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            {% endfor %} 
+
+            </div>
+        </div>
+    </section>
+                 
+       
+    
+    <!-- {% for galeri in gambar %}
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="{{ galeri.image.url }}">
+                        <div class="caption text-center">
+                            <h5>{{galeri.keterangan}}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}  -->

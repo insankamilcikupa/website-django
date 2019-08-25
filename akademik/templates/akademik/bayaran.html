@@ -1,0 +1,40 @@
+<section class="team_wthree py-4" id="team">
+   <div class="container py-lg-5">
+    <ul class="nav">
+    <li class="nav-link">
+      <a class= "btn btn-primary" href="/akademik/data/" title="">Data Diri Siswa</a>
+      <a class= "btn btn-primary" href="/akademik/nilai/" title="">Nilai Siswa</a>
+      <a class= "btn btn-primary" href="/akademik/spp/" title="">SPP Siswa</a><br><br>
+      <a href="{% url 'logout' %}">LOGOUT</a>
+    </li>
+    </ul>
+    <br>
+      <div class="sec-main">
+        <span class="sub-line">Selamat Datang, {{user}}</span>
+        <h3 class="wthree-title">SPP Dalam Satu Bulan</h3>
+      </div>    
+
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">Bulan SPP</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for data in tampil_spp %}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{data.Tanggal|date:"D, d M Y"}}</td>
+                <td>{{data.Bulan}}</td>
+                <td>{{data.Keterangan}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+   	</div>
+</section>

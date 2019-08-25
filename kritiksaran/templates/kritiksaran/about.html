@@ -1,0 +1,49 @@
+<!-- about -->
+<br><br><br>
+    <section class="wthree-row  w3-about position-relative" id="about">
+        <div class="container">
+            <div class="about-head">
+                <div class="sec-main">
+                    <span class="sub-line">Kritik Saran</span>
+                    <h3 class="wthree-title">Untuk TK Insan Kamil</h3>
+                </div>
+                <p>Anda dapat menuliskan kritik dan saran untuk TK Kami, isi kritik dan saran Anda di form sebelah kanan. <br>
+                    Terimakasih.
+                </p>
+            </div>
+        </div>
+        <div class="abt-pos">
+            <h4>Kritik & Saran</h4>
+            <div class="contcat-form">
+                <form action="#" method="post" class="register-wthree">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="text-white">
+                                    Tulis Kritik dan Saran Anda disini
+                                </label>
+                                <div class="container">
+                                    <form method="POST">
+                                        {% csrf_token %}
+                                            <table>
+                                                {{data_form.as_table}}
+                                            </table>
+                                        <button type="Submit" class="btn btn-primary btn-sm btn-block">Kirim Sekarang</button>
+                                    </form>
+                                </div>
+
+                                <!-- <div class="row mt-3">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn  btn-block w-100 font-weight-bold text-capitalize bg-theme1 text-white">Kirim</button>
+                                    </div>
+                                </div> -->
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            
+    </section>
+    <!-- //about -->

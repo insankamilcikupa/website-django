@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <title>TK INSAN KAMIL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Alphabet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+    {% include "snippets/scripts.html" %}
+
+    {% include "snippets/tema.html" %}
+    
+    {% include "snippets/font.html" %}
+
+</head>
+
+<body>
+
+    {% include "snippets/banner.html" %}
+
+    {% include "snippets/header.html" %}
+
+    {% include "snippets/footer.html" %}
+
+    {% include "snippets/javascript.html" %}
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static "templates/js/bootstrap.js" %}"></script>
+</body>
+
+</html>

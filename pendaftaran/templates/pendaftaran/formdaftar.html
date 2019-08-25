@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>
+        <center>{{heading}}</center>
+    </h2>
+</div>
+<br>
+<div class="container">
+    <form method="POST">
+        {% csrf_token %}
+            
+        {% for form in data_form %}
+
+        <div class="form-group">
+            {{form.label}}
+            {{form}}
+        </div>
+
+        {% endfor %}
+
+         <button type="submit" class="btn btn-primary btn-sm btn-block">DAFTAR</button>
+    </form>
+</div>

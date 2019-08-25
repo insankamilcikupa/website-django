@@ -1,0 +1,45 @@
+{% load static %}
+
+<section class="team_wthree py-4" id="team">
+    <div class="container py-lg-5">
+        <div class="sec-main">
+            <span class="sub-line">Siswa</span>
+             	<h3 class="wthree-title">TK Insan Kamil</h3>
+        </div>
+
+	<div class="container">
+		<center>
+				<ul class="nav">
+					<li class="nav-link">
+						<a class= "nav-item" href="/akademik/siswa/" title="">Semua Siswa</a><br>
+						<a href="/akademik/kelas/A" title="">Berdasarkan Kelas</a>
+					</li>
+				</ul>
+		</center>
+	</div>
+
+	<div class="container">
+		<div class="row featurette">
+			<table class="table table-sm">
+				<thead>
+					<tr class="table-warning">
+						<th>No</th>
+						<th>Nama</th>
+						<th>Kelas</th>                         
+					</tr>
+				</thead>  
+				<tbody>
+					{% for siswa in data %}
+					<tr>
+						<td class="table-danger">{{forloop.counter}}</td>
+						<td class="table-danger">{{siswa.Nama_Lengkap}}</td>
+						<td class="table-danger">{{siswa.Kelas}}</td>				
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>	
+</div>
+</div>
+</section>

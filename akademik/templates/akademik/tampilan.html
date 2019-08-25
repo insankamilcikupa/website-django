@@ -1,0 +1,41 @@
+{% load static %}
+
+<section class="team_wthree py-4" id="team">
+        <div class="container py-lg-5">
+            <div class="sec-main">
+                <span class="sub-line">Perkenalkan</span>
+                <h3 class="wthree-title">Guru-guru TK Insan Kamil</h3>
+            </div>
+
+            <div class="row py-4 py-lg-5">
+                {% for guru in gambar %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team_grid">
+                            <img src="{{ guru.Foto.url }}" class="img-fluid img-thumbnail" width="350" height="200">
+                        </div>
+                        <div class="team-text bg-theme2">
+                            <h4 class="text-theme2">"{{guru.Nama_Panggilan}}"</h4>
+                            <h6 class="text-theme4">{{guru.Jabatan}}</h6>
+                            <h6 class="text-theme4">Motto "{{guru.Motto}}"</h6>
+                            <hr>
+                        </div>
+                        <br>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- //team -->
+
+    <!-- {% for galeri in gambar %}
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="{{ galeri.image.url }}">
+                        <div class="caption text-center">
+                            <h5>{{galeri.keterangan}}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}  -->
